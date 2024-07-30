@@ -1,5 +1,9 @@
 <?php
 
-$heading = "Home";
 
-require "../views/index.view.php";
+$heading = "Home";
+require "/xampp/htdocs/rabi/views/index.view.php";
+
+?>
+
+

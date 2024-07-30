@@ -1,8 +1,9 @@
 <?php
+require '/xampp/htdocs/rabi/database.php';
 
-require 'Validator.php';
+require '../../Validator.php';
 
-$config = require 'config.php';
+$config = require '/xampp/htdocs/rabi/config.php';
 $db = new Database($config['database']);
 
 $heading = 'Create Note';
@@ -22,4 +23,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-require 'views/notes/create.view.php';
+
+
+require '../../views/notes/create.view.php';

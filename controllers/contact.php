@@ -2,4 +2,4 @@
 
 $heading = 'Contact Us';
 
-require "../views/contact.view.php";
+require "/xampp/htdocs/rabi/views/contact.view.php";

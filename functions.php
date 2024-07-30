@@ -1,5 +1,14 @@
 <?php
 
+
+
+function abort ($code = 404) {
+    http_response_code($code);
+
+    require "views/{$code}.php";
+
+    die();
+}
 function dd($value)
 {
     echo "<pre>";
@@ -12,9 +21,10 @@ function dd($value)
 function urlIs($value) {
     return $_SERVER['REQUEST_URI'] === $value;
 }
-
 function authorize($condition, $status = Response::FORBIDDEN) {
     if (! $condition) {
         abort($status);
     }
 }
+
+?>

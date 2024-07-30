@@ -1,6 +1,10 @@
-<?php require '/xampp/htdocs/rabi/functions.php'?> 
-<body class="h-full">
-    <div class="min-h-full">
+<?php require('/xampp/htdocs/rabi/views/partials/head.php') ?>
+<?php // require('/xampp/htdocs/rabi/views/partials/nav.php')?>
+<?php // require('/xampp/htdocs/rabi/views/partials/banner.php') ?>
+
+
+<body class="">
+    <div class="">
 <nav class="bg-gray-800">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 items-center justify-between">
@@ -11,13 +15,10 @@
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline">
                         
-                    <a href="/rabi/controllers/index.php" class="<?= urlIs('/rabi/controllers/index.php') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Home</a>
-
-                        <a href="/rabi/controllers/about.php" class="<?= urlIs('/rabi/controllers/about.php') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
-
+                        <a href="/rabi/controllers/index.php" class="<?= urlIs('/rabi/controllers/index.php') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="/about" class="<?= urlIs('/about') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
                         <a href="/rabi/controllers/notes/index.php" class="<?= urlIs('/rabi/controllers/notes/index.php') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Notes</a>
-
-                        <a href="/rabi/controllers/contact.php" class="<?= urlIs('/rabi/controllers/contact.php') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                        <a href="/contact" class="<?= urlIs('/contact') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
                     </div>
                 </div>
             </div>
@@ -108,4 +109,8 @@
         </div>
     </div>
 </nav>
+<?php require('/xampp/htdocs/rabi/views/partials/footer.php') ?>
+
+
+
 <?php //require('/xampp/htdocs/rabi/views/partials/footer.php') ?>
