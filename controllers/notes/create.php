@@ -1,15 +1,15 @@
 <?php
-require '/xampp/htdocs/rabi/database.php';
+require('../../core/functions.php');
+require base_path('/core/database.php');
+require base_path('/core/Validator.php');
 
-require '../../Validator.php';
-
-$config = require '/xampp/htdocs/rabi/config.php';
+$config = require base_path('config.php');
 $db = new Database($config['database']);
 
-$heading = 'Create Note';
+$errors = [];
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $errors = [];
+   
 
     if (! Validator::string($_POST['body'], 1, 1000)) {
         $errors['body'] = 'A body of no more than 1,000 characters is required.';
@@ -25,4 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
 
-require '../../views/notes/create.view.php';
+view("notes/create.view.php", [
+    'heading' => 'Note',
+    'errors' => $errors 
+]);

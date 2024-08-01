@@ -1,8 +1,12 @@
 <?php
 
+require '../core/functions.php';
 
-$heading = "Home";
-require "/xampp/htdocs/rabi/views/index.view.php";
+
+
+ view("index.view.php",[
+    'heading' => 'Home'
+ ])
 
 ?>
 

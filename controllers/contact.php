@@ -1,5 +1,10 @@
 <?php
 
-$heading = 'Contact Us';
+require '../core/functions.php';
 
-require "/xampp/htdocs/rabi/views/contact.view.php";
+
+
+ view("contact.view.php",[
+    'heading' => 'Contact us'
+ ])
+ ?>

@@ -8,9 +8,10 @@ function routeToController($uri, $routes) {
     }
 }
 
+echo 'ho';
 
 
-$routes = require('routes.php');
+$routes = require base_path('/public/routes.php');
 $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 
 routeToController($uri, $routes);

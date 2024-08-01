@@ -1,4 +1,4 @@
-<?php require '/xampp/htdocs/rabi/functions.php'?> 
+<?php require_once '/xampp/htdocs/rabi/core/functions.php'?> 
 <body class="h-full">
     <div class="min-h-full">
 <nav class="bg-gray-800">
