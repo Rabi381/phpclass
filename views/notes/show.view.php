@@ -9,7 +9,14 @@
         </p>
 
         <p><?= htmlspecialchars($note['body']) ?></p>
+
+        <form class="mt-6" method="POST">
+            <input type="hidden" name="_method" value="Delete">
+            <input type="hidden" name="id" value="<?= $note['id']?>">
+            <button class="text-sm text-red-500 hover:text-red-700 hover:underline">DELETE</button>
+        </form>
     </div>
+ 
 </main>
 
 <?php require base_path('views/partials/footer.php') ?>

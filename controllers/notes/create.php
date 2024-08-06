@@ -3,6 +3,9 @@ require('../../core/functions.php');
 require base_path('/core/database.php');
 require base_path('/core/Validator.php');
 
+use core\Database;
+use core\Validator;
+
 $config = require base_path('config.php');
 $db = new Database($config['database']);
 
