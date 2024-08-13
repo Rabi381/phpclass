@@ -1,6 +1,5 @@
 <?php
-require('../../core/functions.php');
-require base_path('/core/database.php');
+
 
 
 use core\database;

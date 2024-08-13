@@ -1,4 +1,4 @@
-<?php require_once '/xampp/htdocs/rabi/core/functions.php'?> 
+
 <body class="h-full">
     <div class="min-h-full">
 <nav class="bg-gray-800">
@@ -11,13 +11,13 @@
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline">
                         
-                    <a href="/rabi/controllers/index.php" class="<?= urlIs('/rabi/controllers/index.php') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                    <a href="/" class="<?= urlIs('/') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Home</a>
 
-                        <a href="/rabi/controllers/about.php" class="<?= urlIs('/rabi/controllers/about.php') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="/about" class="<?= urlIs('/about') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
 
-                        <a href="/rabi/controllers/notes/index.php" class="<?= urlIs('/rabi/controllers/notes/index.php') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Notes</a>
+                        <a href="/notes" class="<?= urlIs('/notes') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Notes</a>
 
-                        <a href="/rabi/controllers/contact.php" class="<?= urlIs('/rabi/controllers/contact.php') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                        <a href="/contact" class="<?= urlIs('/contact') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
                     </div>
                 </div>
             </div>
@@ -108,4 +108,3 @@
         </div>
     </div>
 </nav>
-<?php //require('/xampp/htdocs/rabi/views/partials/footer.php') ?>

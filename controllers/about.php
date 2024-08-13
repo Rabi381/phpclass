@@ -1,7 +1,6 @@
 <?php
 
 
-require '../core/functions.php';
 
 
  view("about.view.php",[

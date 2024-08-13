@@ -1,12 +1,6 @@
 <?php
 
-require '/xampp/htdocs/rabi/core/response.php';
-require '/xampp/htdocs/rabi/index.php';
-
-
 use core\Response;
-
-
 
 function dd($value)
 {
