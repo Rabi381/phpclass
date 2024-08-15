@@ -2,6 +2,6 @@
 
 
 view("notes/create.view.php", [
-    'heading' => 'Note',
+    'heading' => 'Create Note',
     'errors' => [] 
 ]);
