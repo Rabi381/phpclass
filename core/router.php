@@ -1,6 +1,6 @@
 <?php
 
-namespace Core;
+namespace core;
 
 use core\middleware\middleware;
 
@@ -57,7 +57,7 @@ class Router
 
                 middleware::resolve($route['middleware']);
 
-                return require BASE_PATH . $route['controller'];
+                return require base_path('Http/controllers/' .  $route['controller']);
             }
         }
 

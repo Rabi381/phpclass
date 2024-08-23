@@ -2,7 +2,6 @@
 
 namespace core\middleware;
 
-use Exception;
 
 class middleware
 {
